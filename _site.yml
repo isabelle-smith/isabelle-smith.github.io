@@ -2,6 +2,7 @@ name: "isabelletsmith"
 output_dir: docs
 navbar:
   title: "Isabelle T. Smith"
+  class: "nav-tabs"
   left:
     - text: "Home"
       icon: fa-house
