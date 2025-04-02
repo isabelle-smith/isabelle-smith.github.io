@@ -3,7 +3,7 @@ name: "isabelletsmith"
 output_dir: docs
 navbar:
   title: "Isabelle T. Smith"
-  nav-tabs: true
+  style: tabs
   left:
     - text: "Home"
       icon: fa-house
@@ -16,6 +16,7 @@ navbar:
       href: misc.html
 output:
   html_document:
+  
     css: custom.css
     includes:
       in_header: header.html
