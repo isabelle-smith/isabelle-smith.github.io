@@ -3,18 +3,24 @@ project:
   output-dir: docs
 
 website:
-  title: "Isabelle T Smith"
+  title: "Isabelle T. Smith"
   navbar:
+    title: true
+    search: true
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+    tools:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/isabelletsmith
+      - icon: github
+        href: https://github.com/isabelle-smith/isabelle-smith.github.io
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
 
