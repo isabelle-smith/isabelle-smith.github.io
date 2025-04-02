@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Isabelle T. Smith"
+  favicon: chart-line.png
+  page-footer: "2025"
   navbar:
     title: true
     search: true
