@@ -1,8 +1,9 @@
+
 name: "isabelletsmith"
 output_dir: docs
 navbar:
   title: "Isabelle T. Smith"
-  class: "nav-tabs"
+  nav-tabs: true
   left:
     - text: "Home"
       icon: fa-house
