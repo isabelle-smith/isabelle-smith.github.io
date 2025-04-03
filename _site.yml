@@ -1,19 +1,6 @@
 
 name: "isabelletsmith"
 output_dir: docs
-navbar:
-  title: "Isabelle T. Smith"
-  style: tabs
-  left:
-    - text: "Home"
-      icon: fa-house
-      href: index.html
-    - text: "About"
-      icon: fa-circle-info
-      href: about.html
-    - text: "Misc"
-      icon: fa-file
-      href: misc.html
 output:
   html_document:
     theme: jekyll-theme-minimal
