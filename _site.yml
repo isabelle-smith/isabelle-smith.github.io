@@ -16,6 +16,7 @@ navbar:
       href: misc.html
 output:
   html_document:
+    theme: default
     css: custom.css
     includes:
       in_header: header.html
