@@ -6,4 +6,5 @@ output:
     css: custom.css
     includes:
       in_header: header.html
+      before_body: _navbar.html
       after_body: footer.html
