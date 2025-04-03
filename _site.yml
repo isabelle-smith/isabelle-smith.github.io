@@ -16,7 +16,7 @@ navbar:
       href: misc.html
 output:
   html_document:
-    theme: default
+    theme: jekyll-theme-minimal
     css: custom.css
     includes:
       in_header: header.html
