@@ -5,6 +5,6 @@ output:
   html_document:
     css: custom.css
     includes:
-      in_header: header.html
+      in_header: _header.html
       before_body: _navbar.html
-      after_body: footer.html
+      after_body: _footer.html
