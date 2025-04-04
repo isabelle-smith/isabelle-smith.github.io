@@ -1,1 +1,26 @@
 /* css styles */
+
+
+/* NARROW NAV ~ ~ ~ ~ ~ ~ ~  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+@media (max-width: 767px) {
+    .nav-tabs>li>a {
+        border: none;
+        border-radius: 0px;
+    }
+    .nav-tabs>li>a:hover {
+        border: none;
+        border-radius: 0px;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        border: none;
+        border-radius: 0px;
+        cursor: default;
+    }
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: blue;
+    background-color: lightblue;
+}
