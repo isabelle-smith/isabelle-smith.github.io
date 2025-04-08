@@ -1,8 +1,60 @@
+
 /* css styles */
 
+:root {
+    --body-color: rgb(255, 255, 255);
+}
 
-/* NARROW NAV ~ ~ ~ ~ ~ ~ ~  ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+/* WIDE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+@media (min-width: 768px) {
+
+    /* NAV TABS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    
+    div.navbar {
+        padding-top: 10px;
+    }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: black;
+        background-color: var(--body-color);
+    }
+    
+    .nav-tabs {
+        border-bottom: none;
+    }
+    
+    .nav-tabs>li>a{
+        top: 5px;
+        padding: 10px 20px 15px 20px;
+        border-bottom: none;
+    }
+    
+    .nav-tabs>li>a,.nav-tabs>li>a:hover {
+        border-color: black;
+    }
+    
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: blue;
+    }
+
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        cursor: default;
+        border: thin solid black;
+        border-bottom: none;
+    }
+
+    /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+        margin-left: -35px;
+    }
+}
+
+
+/* NARROW ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 @media (max-width: 767px) {
+
+    /* NAV TABS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    
     .nav-tabs>li>a {
         border: none;
         border-radius: 0px;
@@ -16,11 +68,24 @@
         border-radius: 0px;
         cursor: default;
     }
+
+    /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: blue;
+        background-color: transparent;
+    }
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: blue;
-    background-color: lightblue;
+.navbar-default .navbar-brand {
+    color:chartreuse;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: black;
+}
+body{
+    background-color: var(--body-color);
 }
