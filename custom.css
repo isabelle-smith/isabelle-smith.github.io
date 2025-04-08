@@ -2,8 +2,14 @@
 /* css styles */
 
 :root {
+    --nav-color: rgb(230, 240, 255);
+    --tabs-color: rgb(235, 235, 235);
     --body-color: rgb(255, 255, 255);
 }
+
+
+
+
 
 /* WIDE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 @media (min-width: 768px) {
@@ -23,9 +29,11 @@
     }
     
     .nav-tabs>li>a{
-        top: 5px;
-        padding: 10px 20px 15px 20px;
+        background-color: var(--tabs-color);
         border-bottom: none;
+        margin-right: 7px;
+        padding: 10px 20px 15px 20px;
+        top: 4px;
     }
     
     .nav-tabs>li>a,.nav-tabs>li>a:hover {
@@ -37,9 +45,10 @@
     }
 
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-        cursor: default;
         border: thin solid black;
         border-bottom: none;
+        cursor: default;
+        padding-bottom: 16px;
     }
 
     /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -48,6 +57,9 @@
         margin-left: -35px;
     }
 }
+
+
+
 
 
 /* NARROW ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
@@ -79,13 +91,27 @@
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
 
+
+
+
+
+/* NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .navbar-default .navbar-brand {
     color:chartreuse;
 }
+
 .navbar-default {
-    background-color: #f8f8f8;
+    background-color: var(--nav-color);
     border-color: black;
 }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: blue;
+    /*background-color: transparent;*/
+}
+
+/* BODY + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
 body{
     background-color: var(--body-color);
 }
