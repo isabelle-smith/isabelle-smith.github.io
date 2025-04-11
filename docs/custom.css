@@ -10,21 +10,15 @@
 }
 
 
-
+a.icon{
+  /* icon links :) */
+}
 
 
 /* WIDE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 @media (min-width: 768px) {
 
     /* NAV TABS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-    
-    div.navbar {
-        padding-top: 10px;
-    }
-    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-        color: black;
-        background-color: var(--body-color);
-    }
     
     .nav-tabs {
         border-bottom: none;
@@ -42,13 +36,6 @@
         border-color: black;
     }
     
-    .navbar-default .navbar-nav>li>a {
-        color: black;
-    }
-    
-    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-        color: blue;
-    }
     
     #navbar>ul.nav.navbar-nav.nav-tabs>li>a:focus, #navbar>ul.nav.navbar-nav.nav-tabs>li>a:hover{
         background-color: var(--tabs-highlight-color);
@@ -67,8 +54,30 @@
 
     /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
+    div.navbar {
+        padding-top: 10px;
+    }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: black;
+        background-color: var(--body-color);
+    }
+    
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
         margin-left: -35px;
+    }
+    
+    
+    .navbar-default .navbar-nav>li>a {
+        color: black;
+    }
+    
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: blue;
+    }
+    
+    .nav>li>a.icon {
+        font-size: 2.25rem;
+        padding: 10px 15px;
     }
 }
 
@@ -84,6 +93,7 @@
     .nav-tabs>li>a {
         border: none;
         border-radius: 0px;
+        margin: 0px;
     }
     .nav-tabs>li>a:hover {
         border: none;
@@ -98,8 +108,21 @@
     /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-        color: blue;
+        color: grey;
         background-color: transparent;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: black;
+    }
+    
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: blue;
+    }
+    
+    .navbar-right>li{
+        float: left;
+        margin-left: 10px;
     }
 }
 
