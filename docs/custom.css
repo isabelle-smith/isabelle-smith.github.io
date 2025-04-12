@@ -124,6 +124,14 @@ a.icon{
         float: left;
         margin-left: 10px;
     }
+    
+    .navbar-default .navbar-toggle {
+        border: none;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: var(--tabs-highlight-color);
+    }
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
@@ -152,3 +160,18 @@ a.icon{
 body{
     background-color: var(--body-color);
 }
+
+/* FOOTER @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @ */
+
+div.footer{
+    border-top: thin solid black;
+    background-color: var(--nav-color);
+    margin-top: 3em;
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
