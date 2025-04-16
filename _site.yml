@@ -1,6 +1,7 @@
 
 name: "isabelletsmith"
 output_dir: docs
+include: ["images/Isabelle-T-Smith-signature.png"]
 output:
   html_document:
     css: custom.css
