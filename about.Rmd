@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-Isabelle T. Smith is currently pursuing her Master's in Statistics at the University of Vermont.
+Isabelle T. Smith got her Master's in Statistics at the University of Vermont. She previously graduated *cum laude* from the same institution with a BS in Statistics as well as minors in Art and Computer Science.
