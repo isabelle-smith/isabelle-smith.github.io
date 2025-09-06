@@ -9,3 +9,5 @@ title: "Miscellaneous"
 - Use `rmarkdown:::site_skeleton(getwd())` in the console, along with `rmarkdown::render_site()` as needed.  
 
 - The code for the navigation bar comes from https://github.com/rstudio/rmarkdown-website/blob/master/_navbar.html (accessed April 2025).  
+
+- My signature was converted to vector form using https://www.pngtosvg.com/ and inserted with help from https://stackoverflow.com/a/4482962.  

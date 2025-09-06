@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
 /* css styles */
 
 :root {
@@ -11,12 +13,127 @@
 
 
 a.icon{
-  /* icon links :) */
+    /* icon links :) */
 }
+
+body{
+    padding-bottom: 0px !important;
+}
+
+h1.title{
+    color: var(--title-color);
+    font-family: Kavivanar;
+    margin: 0.75em 0em;
+    text-align: center;
+}
+
+h2{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img{
+    border-radius: 15px;
+    border: thin solid black;
+}
+
+ul{
+    padding-inline-start: 15px;
+}
+
+
+
+
+
+
+
+/* NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.navbar-default .navbar-brand {
+    color:var(--title-color);
+}
+
+.navbar-default {
+    background-color: var(--nav-color);
+    border-color: black;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: blue;
+    /*background-color: transparent;*/
+}
+
+a.navbar-brand{
+    padding: 5px 25px 0px 0px;
+}
+
+img.nav-name{
+    border: none;
+    border-radius: 0px;
+}
+
+/* BODY + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
+body{
+    background-color: var(--body-color);
+}
+
+/* FOOTER @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @ */
+
+div.footer{
+    border-top: thin solid black;
+    background-color: var(--nav-color);
+    margin-top: 3em;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
 
 
 /* WIDE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 @media (min-width: 768px) {
+  
+    /* PAGE = ABOUT ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+    
+    div.about-grid{
+        display: grid;
+        gap: 0% 8%;
+        grid-template-columns: 19% 19% 19% 19%;
+        grid-template-rows: max-content max-content max-content max-content;
+        grid-template-areas:
+          "about-pho about-edu about-edu about-int"
+          "about-pho . . about-int"
+          ". . . about-int"
+          ". . . .";
+        margin-top: 5%;
+    }
+    
+    div.about img{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    
+    div.about-photo{
+        grid-area: about-pho;
+    }
+    
+    div.about-education{
+        grid-area: about-edu;
+    }
+    
+    div.about-interests{
+        grid-area: about-int;
+    }
 
     /* NAV TABS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
@@ -43,7 +160,7 @@ a.icon{
 
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
         border: thin solid black;
-        border-bottom: none;
+        border-bottom: thin solid white;
         cursor: default;
         padding-bottom: 16px;
     }
@@ -54,16 +171,22 @@ a.icon{
 
     /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
+    .container {
+        width: auto;
+    }
+    
     div.navbar {
+        padding-left: 25px;
         padding-top: 10px;
     }
+    
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
         color: black;
         background-color: var(--body-color);
     }
     
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
-        margin-left: -35px;
+        /*margin-left: -35px;*/
     }
     
     
@@ -87,6 +210,22 @@ a.icon{
 
 /* NARROW ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 @media (max-width: 767px) {
+  
+    /* PAGE = ABOUT ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+    
+    div.about-grid{
+        margin-top: 5%;
+    }
+
+    div.about{
+        margin-bottom: 20%; 
+    }
+    
+    div.about img{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
 
     /* NAV TABS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     
@@ -106,6 +245,11 @@ a.icon{
     }
 
     /* OTHER NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    
+    img.nav-name{
+        height: 75%;
+        margin: 5%;
+    }
     
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
         color: grey;
@@ -135,47 +279,5 @@ a.icon{
 }
 
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~*/
-
-
-
-
-
-/* NAV - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.navbar-default .navbar-brand {
-    color:var(--title-color);
-}
-
-.navbar-default {
-    background-color: var(--nav-color);
-    border-color: black;
-}
-
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: blue;
-    /*background-color: transparent;*/
-}
-
-a.navbar-brand{
-    padding: 5px 25px 0px 0px;
-}
-
-/* BODY + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + */
-
-body{
-    background-color: var(--body-color);
-}
-
-/* FOOTER @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @  @ */
-
-div.footer{
-    border-top: thin solid black;
-    background-color: var(--nav-color);
-    margin-top: 3em;
-    padding: 1em;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
 
 

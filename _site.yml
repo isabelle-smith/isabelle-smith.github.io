@@ -1,7 +1,7 @@
 
 name: "isabelletsmith"
 output_dir: docs
-include: ["images/Isabelle-T-Smith-signature.png"]
+include: ["images/Isabelle-T-Smith-signature.png", "images/Isabelle-T-Smith-signature.svg"]
 output:
   html_document:
     css: custom.css

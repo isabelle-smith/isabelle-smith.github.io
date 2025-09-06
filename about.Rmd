@@ -2,4 +2,48 @@
 title: "About"
 ---
 
-Isabelle T. Smith got her Master's in Statistics at the University of Vermont. She previously graduated *cum laude* from the same institution with a BS in Statistics as well as minors in Art and Computer Science.
+<div class="about-grid">
+
+
+
+
+
+<div class="about about-photo">
+
+## Photo
+
+<img src="images/Isabelle_Smith_01.jpg" alt="Image of Isabelle">
+
+</div>
+
+
+
+<div class="about about-education">
+
+## Education
+
+Isabelle got her Master's in Statistics at the University of Vermont in 2025. She previously graduated *cum laude* from UVM with a BS in Mathematical Sciences (Statistics) and minors in Art and Computer Science.
+
+</div>
+
+
+
+<div class="about about-interests">
+
+## Interests
+
+- music  
+- language (mostly etymology & translation)  
+- astrology  
+- data representation  
+- plants (especially houseplants)  
+- mental & physical health
+- patterns of any kind
+
+</div>
+
+
+
+
+
+</div>
