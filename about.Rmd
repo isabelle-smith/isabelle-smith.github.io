@@ -12,7 +12,7 @@ title: "About"
 
 ## Photo
 
-<img src="images/Isabelle_Smith_01.jpg" alt="Image of Isabelle">
+<img src="images/Isabelle_Smith_01-50pct.jpg" alt="Image of Isabelle">
 
 </div>
 
